@@ -281,17 +281,12 @@ body {
     position: fixed;
     width:800px;
     height:1280px;
-    line-height:1280px;
     left: 0px;
     top: 0px;
     background-color:rgba(0, 0, 0, 0.6);
     z-index:100;
 
     display: none;
-}
-#product_video
-{
-    vertical-align: middle;
 }
 #product_video_close
 {

@@ -78,6 +78,7 @@ class App {
         var now = new Date().getTime();
         if(now-this.lastAction>this.timeout*1000)
         {
+            this.hideVideo();
             this.showIntro();
         }
     }
@@ -120,7 +121,7 @@ class App {
         var videoid = $(e.currentTarget).attr('id');
         var videobox = $('#product_video_holder');
         videobox.show();
-        TweenMax.fromTo(videobox, 0.5, {x: 400, y: 530, width: 0, height: 0}, {
+        TweenMax.fromTo(videobox, 0.4, {x: 400, y: 530, width: 0, height: 0}, {
             x: 0,
             y: 0,
             width: 800,
@@ -131,9 +132,11 @@ class App {
         var video = $('#product_video').get(0);
         video.src = './videos/' + videoid + '.mp4';
 
+
     }
 
     showAnimationEnded() {
+        $('#main').css('visibility', 'hidden');
         $('#product_video_close').show();
         $('#product_video').show();
         var video = $('#product_video').get(0);
@@ -142,9 +145,11 @@ class App {
     }
 
     hideVideo() {
+        this.lastAction=new Date().getTime();
         var video = $('#product_video').get(0);
         video.pause();
         $('#product_video_holder').hide();
+        $('#main').css('visibility', 'visible');
     }
 
     animateReviews() {
