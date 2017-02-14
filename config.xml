@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ultimateears" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+		<name>UltimateEars		</name>
+		<description>UltimateEars		</description>
+		<author href="http://www.flexynet.gr" email="info@flexynet.gr">Flexynet		</author>
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="true" />
+    <content src="index.html" />
+    <access origin="*" />
+	<plugin name="cordova-plugin-crosswalk-webview" source="npm" />
+	<platform name="android">
+		<icon src="icons\36.png" qualifier="ldpi" />
+		<icon src="icons\48.png" qualifier="mdpi" />
+		<icon src="icons\72.png" qualifier="hdpi" />
+		<icon src="icons\96.png" qualifier="xhdpi" />
+		<icon src="icons\144.png" qualifier="xxhdpi" />
+		<icon src="icons\192.png" qualifier="xxxhdpi" />
+	</platform>
+</widget>
