@@ -16,4 +16,6 @@
 		<icon src="icons\144.png" qualifier="xxhdpi" />
 		<icon src="icons\192.png" qualifier="xxxhdpi" />
 	</platform>
+	<icon src="icon.png" />
+	<splash src="splash.png" />
 </widget>
