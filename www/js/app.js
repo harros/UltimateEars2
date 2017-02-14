@@ -59,6 +59,7 @@ class App {
     }
     showMain() {
         $('#page1Video').remove();
+        $('#main').css('visibility', 'visible');
 
         this.lastAction=new Date().getTime();
         if(this.idleInterval)
